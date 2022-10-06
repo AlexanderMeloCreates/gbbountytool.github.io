@@ -1,0 +1,71 @@
+@font-face {
+    font-family: RobotoSlab;
+    src: url(Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+.sunkButtonDiv1, .sunkButtonDiv2, .sunkButtonDiv3, .sunkButtonDiv4{
+          position: absolute;
+          display: block;
+          height: auto;
+          width: auto;
+          left: 23vw;
+          top: 14.1vw;
+          overflow: visible;
+          z-index: 79;
+          pointer-events: all;
+          cursor: pointer;
+      }
+      .sunkButtonDiv2{
+        left: 38vw;
+      }
+      .sunkButtonDiv3{
+        left: 53vw;
+      }
+      .sunkButtonDiv4{
+        left: 68vw;
+      }
+
+
+      .sunkButtonTextDiv1, .sunkButtonTextDiv2, .sunkButtonTextDiv3,
+      .sunkButtonTextDiv4{
+          position: absolute;
+          display: flex;
+          height: 100%;
+          width: 100%;
+          left: 0vw;
+          top: 0vw;
+          overflow: hidden;
+          z-index: 79;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          flex: 0;
+          cursor: pointer;
+      }
+      .sunkButtonText1, .sunkButtonText2, .sunkButtonText3,
+      .sunkButtonText4{
+          position: absolute;
+          flex: 0;
+          height: auto;
+          width: 100%;
+          left: 0;
+          top: auto;
+          overflow: hidden;
+          z-index: 79;
+          color: white;
+          font-size: 1.1vw;
+          font-weight: bold;
+          pointer-events: all;
+          cursor: pointer;
+          font-family: 'RobotoSlab';
+      }
+      .sunkButtonText1:hover, .sunkButtonTextDiv1:hover > .sunkButtonText1,
+      .sunkButtonText2:hover, .sunkButtonTextDiv2:hover > .sunkButtonText2,
+      .sunkButtonText3:hover, .sunkButtonTextDiv3:hover > .sunkButtonText3,
+      .sunkButtonText4:hover, .sunkButtonTextDiv4:hover > .sunkButtonText4{
+          color: #f7a2a0;
+      }
+      .scrollingDiv{
+        height: 29vw;
+        top: 18.7vw;
+    }

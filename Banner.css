@@ -1,0 +1,211 @@
+@font-face {
+    font-family: RobotoSlab;
+    src: url(Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
+}
+
+::-webkit-scrollbar {
+    background-color: #6b2525;
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb{
+      background-color: #118181;
+      border-radius: 100px;
+  }
+  ::-webkit-scrollbar-track{
+      background-color: #6b2525;
+      border-radius: 100px;
+  }
+  a {
+    color: rgb(112, 221, 240);
+  }
+   .uppermostDiv{
+          position: relative;
+          top: 0;
+          left: 0;
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          height: 100%;
+          text-align: center;
+          overflow: hidden;
+      }
+      .baseDiv{
+          position: relative;
+          top: 0;
+          left: 0;
+          display: flex;
+          margin: auto;
+          flex-direction: column;
+          width: 90vw;
+          height: 100%;
+          text-align: center;
+          overflow: visible;
+      }
+      .titleDiv{
+          position: absolute;
+          display: block;
+          height: 50%;
+          width: 85%;
+          left: 15%;
+          top: 3.8vw;
+          overflow: hidden;
+          z-index: 79;
+      }
+      .titleText{
+          font-size: 5vw;
+          color: #f6d900;
+          font-family: 'RobotoSlab';
+      }
+      /*Add 4.55vw*/
+      .sideButtonDiv1, .sideButtonDiv2, .sideButtonDiv3, .miniButtonDiv1, .miniButtonDiv2,
+      .sideButtonDiv4, .microButtonDiv1, .microButtonDiv2, .microButtonDiv3{
+          position: absolute;
+          display: block;
+          height: auto;
+          width: auto;
+          left: 1.2vw;
+          top: 9.55vw;
+          overflow: visible;
+          z-index: 79;
+          pointer-events: all;
+          cursor: pointer;
+      }
+      .sideButtonDiv2{
+          top: 14.1vw;
+      }
+      .sideButtonDiv3{
+          top: 18.65vw;
+      }
+      .miniButtonDiv1, .miniButtonDiv2{
+          top: 23.2vw;
+      }
+      .miniButtonDiv2{
+          left: 7.05vw;
+      }
+      .sideButtonDiv4{
+          top: 27.75vw;
+      }
+      .microButtonDiv1, .microButtonDiv2, .microButtonDiv3{
+          top: 32.3vw;
+      }
+      .microButtonDiv2{
+          left: 5.5vw;
+      }
+      .microButtonDiv3{
+          left: 9.8vw;
+      }
+      .button1{
+          width: 11.6vw;
+      }
+      .miniButton1{
+          width: 5.7vw;
+      }
+      .microButton1, .microButton2, .microButton3,
+      .microButtonHighlight1, .microButtonHighlight2, .microButtonHighlight3{
+          width: 2.9vw;
+      }
+      .microButtonHighlight1, .microButtonHighlight2, .microButtonHighlight3{
+          pointer-events: none;
+          position: absolute;
+          display: flex;
+          top: 0;
+          visibility: hidden;
+      }
+      .microButton1:hover ~ .microButtonHighlight1,
+      .microButton2:hover ~ .microButtonHighlight2,
+      .microButton3:hover ~ .microButtonHighlight3{
+          visibility: visible;
+      }
+      .buttonTextDiv1, .buttonTextDiv2, .buttonTextDiv3,
+      .buttonTextDiv4, .buttonTextDiv5, .buttonTextDiv6{
+          position: absolute;
+          display: flex;
+          height: 100%;
+          width: 100%;
+          left: 0vw;
+          top: 0vw;
+          overflow: hidden;
+          z-index: 79;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          flex: 0;
+          cursor: pointer;
+      }
+      .buttonText1, .buttonText2, .buttonText3,
+      .buttonText4, .buttonText5, .buttonText6{
+          position: absolute;
+          flex: 0;
+          height: auto;
+          width: 100%;
+          left: 0;
+          top: auto;
+          overflow: hidden;
+          z-index: 79;
+          color: white;
+          font-size: 1vw;
+          font-weight: bold;
+          pointer-events: all;
+          cursor: pointer;
+          font-family: 'RobotoSlab';
+      }
+      .buttonText1:hover, .buttonTextDiv1:hover > .buttonText1,
+      .buttonText2:hover, .buttonTextDiv2:hover > .buttonText2,
+      .buttonText3:hover, .buttonTextDiv3:hover > .buttonText3,
+      .buttonText4:hover, .buttonTextDiv4:hover > .buttonText4,
+      .buttonText5:hover, .buttonTextDiv5:hover > .buttonText5,
+      .buttonText6:hover, .buttonTextDiv6:hover > .buttonText6{
+          color: #f7a2a0;
+      }
+      .universalBackground{
+          flex: 0;
+          position: absolute;
+          display: flex;
+          left: auto;
+          right: 0;
+          top: auto;
+          bottom: 0;
+          z-index: 78;
+          width: auto;
+          height: 100%;
+          pointer-events: none;
+          opacity: 1;
+      }
+  
+      .frontGhostDiv, .frontGhost{
+          position: sticky;
+          flex: 0;
+          left: auto;
+          right: auto;
+          top: auto;
+          bottom: auto;
+          z-index: 79;
+          width: inherit;
+          pointer-events: none;
+          opacity: 1;
+          margin: auto;
+          height: 48.34vw;
+      }
+      .frontGhost{
+          left:0;
+          bottom:auto;
+          top: auto;
+          height: auto;
+      }
+  
+      .scrollingDiv{
+          position: absolute;
+          display: flex;
+          height: 34vw;
+          width: 75vw;
+          left: 14.4vw;
+          top: 13.7vw;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          z-index: 79;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          flex: 0;
+          pointer-events: all;
+      }
